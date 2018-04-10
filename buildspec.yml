@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+      - aws cloudformation package --template-file template.yaml --s3-bucket lambda-artifact
+                                   --output-template-file new-template.yaml
+
+artifacts:
+  type: zip
+  files:
+    - template.yaml
+
