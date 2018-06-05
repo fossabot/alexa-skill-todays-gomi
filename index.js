@@ -43,7 +43,7 @@ const gomiMonthlyRules = {
     '10' : [ 'A' , 'C' ] ,
     '11' : [ 'A' , 'D' ] ,
     '12' : [ 'A' , 'D' ]
-}
+};
 
 const handlers = {
     'LaunchRequest': function () {
